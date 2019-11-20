@@ -48,13 +48,17 @@ def run(songs)
  while user_input
    if user_input == "list"
      list(songs)
+     break
    elsif user_input =="play"
      list(songs)
      play(songs)
+     break
    elsif user_input =="help"
      help
+     break
    elsif user_input =="exit"
      exit_jukebox
+     break
    else
      puts "Invalid command"
      help
